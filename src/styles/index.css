@@ -1,0 +1,40 @@
+/* CSS general for all pages */
+* {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+body {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main {
+  padding: 0 100px;
+}
+
+/* Breakpoint */
+@media screen and (max-width: 1200px) {
+  main {
+      padding: 0 50px;
+  }
+}
+
+/* Responsive tablet */
+@media screen and (max-width: 991px) {
+  main {
+    padding: 0 10px;
+  }
+}
+
+/* Responsive mobile */
+@media screen and (max-width: 767px) {
+  main {
+    padding: 0 20px;
+  }
+}
+
+
+

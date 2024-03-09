@@ -1,0 +1,74 @@
+.cards-in-home-page  {
+   width: 28.5%;
+   height: 340px;
+   padding-bottom: 50px;
+}
+ 
+.cards-in-home-page a {
+    position: relative;
+}
+
+.cards-in-home-page img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.overlay {
+    width: 100%;
+    height: 340px;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    border-radius: 10px;
+}
+
+.cards-in-home-page h3 {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    position: absolute;
+    color: #FFFFFF;
+    bottom: 10px;
+    left: 15px;
+    right: 15px;
+}
+
+/* Breakpoint */
+@media screen and (max-width: 1200px) {
+    .cards-in-home-page {
+        width: 30.5%;
+    }
+    .cards-in-home-page h3 {
+        right: 5px;
+    }
+}
+
+/* Responsive tablet */
+@media screen and (max-width: 991px) {
+    .cards-in-home-page {
+        width: 32%;
+        padding-bottom: 10px;
+    }
+    .cards-in-home-page h3 {
+        left: 10px;
+        font-size: 16px;
+    }
+}
+
+/* Responsive mobile */
+@media screen and (max-width: 767px) {
+    .cards-in-home-page {
+        width: 100%;
+        height: 255px;
+        padding-bottom: 20px;
+    }
+    .overlay {
+        height: 255px;
+    }
+    .cards-in-home-page h3 {
+        left: 15px;
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,29 @@
+/* CSS for placing all lodgings cards in home page */
+.lodging-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    padding: 56px 20px 6px 20px;
+}
+
+/* Responsive tablet */
+@media screen and (max-width: 991px) {
+    .lodging-list {
+        padding: 10px 5px 0 5px;
+    }
+}
+
+/* Responsive mobile */
+@media screen and (max-width: 767px) {
+    .lodging-list {
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
