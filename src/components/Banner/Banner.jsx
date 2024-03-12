@@ -1,14 +1,14 @@
-import React from 'react';
-import './Banner.css';
+import React from "react";
+import "./Banner.css";
 
-// Banner component declaration with a function 
+// Banner component declaration with a function
 function Banner(props) {
-  	return (
-		<div className='banner-style'>
-			{props.title && <h2 className='title-banner'>{props.title}</h2>}
-		  	<img src={props.image} alt={props.title} title={props.title} />
-		</div>
-  	);
-};
+  return (
+    <div className="banner-style">
+      {props.title && <h2 className="title-banner">{props.title}</h2>}
+      <img src={props.image} alt={props.title} title={props.title} />
+    </div>
+  );
+}
 
 export default Banner;

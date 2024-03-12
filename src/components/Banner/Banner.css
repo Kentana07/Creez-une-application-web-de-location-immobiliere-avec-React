@@ -1,71 +1,66 @@
 /* CSS general for Banner component */
 .banner-style {
-    height: 223px;
-    width: 100%;
+  height: 223px;
+  width: 100%;
 }
 
 .banner-style img {
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
-    object-fit: cover;
-    filter : brightness(70%);
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  object-fit: cover;
+  filter: brightness(70%);
 }
 
 /* CSS only Banner component in Home page */
 .title-banner {
-    position: absolute;
-    color: #FFFFFF;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 68px;
-    z-index: 1;
-    padding-top: 78px;
-    text-align: center;
-    width: 100%;
+  position: absolute;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 68px;
+  z-index: 1;
+  padding-top: 78px;
+  text-align: center;
+  width: 100%;
 }
 
 .banner-style-in-home-page {
-    padding-top: 70px;
-    padding-bottom: 43px;
+  padding-top: 70px;
+  padding-bottom: 43px;
 }
 
 .banner-style-in-home-page .banner-style {
-    position: relative;
+  position: relative;
 }
 
 /* CSS only Banner component in About page */
 .banner-style-in-about-page {
-    padding-top: 45px;
+  padding-top: 45px;
 }
 
 /* Responsive mobile */
 @media screen and (max-width: 767px) {
-    .banner-style img {
-        border-radius: 10px;
-    }
-    .title-banner {
-        font-size: 24px;
-        padding-top: 30px;
-        padding-left: 15px;
-        line-height: 24px;
-        text-align: start;
-        width: 65%;
-    }
-    .banner-style-in-home-page {
-        padding-top: 16px;
-        padding-bottom: 22px;
-    }
-    .banner-style-in-home-page .banner-style {
-        height: 111px;
-    }
-    .banner-style-in-about-page {
-        padding-top: 17px;
-        padding-bottom: 19px;
-    }
+  .banner-style img {
+    border-radius: 10px;
+  }
+  .title-banner {
+    font-size: 24px;
+    padding-top: 30px;
+    padding-left: 15px;
+    line-height: 24px;
+    text-align: start;
+    width: 65%;
+  }
+  .banner-style-in-home-page {
+    padding-top: 16px;
+    padding-bottom: 22px;
+  }
+  .banner-style-in-home-page .banner-style {
+    height: 111px;
+  }
+  .banner-style-in-about-page {
+    padding-top: 17px;
+    padding-bottom: 19px;
+  }
 }
-    
-
-
-
-

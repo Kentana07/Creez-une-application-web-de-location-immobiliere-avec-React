@@ -1,151 +1,158 @@
 /* CSS general for Collapse component */
 .collapse-drop-down-list {
-    background-color: #f7f7f7;
+  background-color: #f7f7f7;
 }
 
 .collapse-drop-down-list h3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid #FF6060;
-    background-color: #FF6060;
-    padding-left:  20px;
-    font-weight: 500;
-    color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ff6060;
+  background-color: #ff6060;
+  padding-left: 20px;
+  font-weight: 500;
+  color: #ffffff;
 }
 
 .collapse-drop-down-list h3:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .collapse-drop-down-list img {
-    height: 13px;
-    width: 24px;
+  height: 13px;
+  width: 24px;
 }
 
 .content-in-collapse {
-    font-weight: 400;
-    color: #FF6060;
+  font-weight: 400;
+  color: #ff6060;
 }
 
 .arrow {
-    transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .arrow-to-open {
-    transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .arrow-to-close {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 /* CSS only Collapse component in About page */
 .style-collapse-in-about-page .collapse-drop-down-list {
-    margin: 30px 110px 0 110px;
+  margin: 30px 110px 0 110px;
 }
 
-.style-collapse-in-about-page h3, .style-collapse-in-about-page .collapse-drop-down-list {
-    border-radius: 5px;
+.style-collapse-in-about-page h3,
+.style-collapse-in-about-page .collapse-drop-down-list {
+  border-radius: 5px;
 }
 
-.style-collapse-in-about-page h3, .style-collapse-in-about-page .content-in-collapse {
-    font-size: 24px;
-    line-height: 34px;
-    
+.style-collapse-in-about-page h3,
+.style-collapse-in-about-page .content-in-collapse {
+  font-size: 24px;
+  line-height: 34px;
 }
 
 .style-collapse-in-about-page h3 {
-    padding-right: 33px;
+  padding-right: 33px;
 }
 
 .style-collapse-in-about-page img {
-    padding: 16px 0;
+  padding: 16px 0;
 }
 
 .style-collapse-in-about-page .content-in-collapse {
-    padding: 27px 27px 20px 20px;
+  padding: 27px 27px 20px 20px;
 }
 
 /* CSS only Collapse component in Lodging page */
-.style-collapse-in-lodging-page  {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.style-collapse-in-lodging-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .style-collapse-in-lodging-page .collapse-in-lodging {
-    margin: 0;
-    width: 47%;
+  margin: 0;
+  width: 47%;
 }
 
-.style-collapse-in-lodging-page h3, .style-collapse-in-lodging-page .collapse-drop-down-list {
-    border-radius: 10px;
+.style-collapse-in-lodging-page h3,
+.style-collapse-in-lodging-page .collapse-drop-down-list {
+  border-radius: 10px;
 }
 
-.style-collapse-in-lodging-page h3, .style-collapse-in-lodging-page .content-in-collapse {
-    font-size: 18px;
-    line-height: 25px;
+.style-collapse-in-lodging-page h3,
+.style-collapse-in-lodging-page .content-in-collapse {
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .style-collapse-in-lodging-page h3 {
-    padding-right: 13px;
+  padding-right: 13px;
 }
 
 .style-collapse-in-lodging-page img {
-    padding: 18px 0 19px 0;
+  padding: 18px 0 19px 0;
 }
 
 .style-collapse-in-lodging-page .content-in-collapse {
-    min-height: 249px;
-    padding: 30px 12px 0 20px;
+  min-height: 249px;
+  padding: 30px 12px 0 20px;
 }
 
 .details-equipments {
-    padding-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 /* Responsive mobile */
 @media screen and (max-width: 767px) {
-    .collapse-drop-down-list img {
-        height: 7px;
-        width: 13px;
-    }
-    .collapse-drop-down-list h3 {
-        padding-left: 11px;
-    }
-    .style-collapse-in-about-page h3, .style-collapse-in-lodging-page h3 {
-        font-size: 13px;
-        line-height: 18px;
-        padding-right: 7px;
-    }
-    .style-collapse-in-about-page .content-in-collapse, .style-collapse-in-lodging-page .content-in-collapse {
-        font-size: 12px;
-        line-height: 17px;
-    }
-    .style-collapse-in-about-page .collapse-drop-down-list, .style-collapse-in-lodging-page .collapse-drop-down-list {
-        margin: 0 0 20px 0;
-    }
-    .style-collapse-in-about-page img, .style-collapse-in-lodging-page img {
-        padding: 10px 0 11px 0;
-    }
-    .style-collapse-in-about-page .content-in-collapse {
-        padding: 17px 7px 53px 11px;
-    }
-    .style-collapse-in-lodging-page  {
-        display: flex;
-        flex-direction: column;
-    }
-    .style-collapse-in-lodging-page h3, .style-collapse-in-lodging-page .collapse-drop-down-list {
-        border-radius: 5px;
-    }
-    .style-collapse-in-lodging-page .content-in-collapse {
-        min-height: 144px;
-        padding: 17px 7px 0 11px;
-    }
-    .style-collapse-in-lodging-page .collapse-in-lodging {
-        width: 100%;
-    }
+  .collapse-drop-down-list img {
+    height: 7px;
+    width: 13px;
+  }
+  .collapse-drop-down-list h3 {
+    padding-left: 11px;
+  }
+  .style-collapse-in-about-page h3,
+  .style-collapse-in-lodging-page h3 {
+    font-size: 13px;
+    line-height: 18px;
+    padding-right: 7px;
+  }
+  .style-collapse-in-about-page .content-in-collapse,
+  .style-collapse-in-lodging-page .content-in-collapse {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .style-collapse-in-about-page .collapse-drop-down-list,
+  .style-collapse-in-lodging-page .collapse-drop-down-list {
+    margin: 0 0 20px 0;
+  }
+  .style-collapse-in-about-page img,
+  .style-collapse-in-lodging-page img {
+    padding: 10px 0 11px 0;
+  }
+  .style-collapse-in-about-page .content-in-collapse {
+    padding: 17px 7px 53px 11px;
+  }
+  .style-collapse-in-lodging-page {
+    display: flex;
+    flex-direction: column;
+  }
+  .style-collapse-in-lodging-page h3,
+  .style-collapse-in-lodging-page .collapse-drop-down-list {
+    border-radius: 5px;
+  }
+  .style-collapse-in-lodging-page .content-in-collapse {
+    min-height: 144px;
+    padding: 17px 7px 0 11px;
+  }
+  .style-collapse-in-lodging-page .collapse-in-lodging {
+    width: 100%;
+  }
 }
-

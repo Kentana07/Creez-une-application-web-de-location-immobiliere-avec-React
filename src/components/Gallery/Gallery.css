@@ -1,80 +1,82 @@
 .slider {
-	position: relative;
-	overflow: hidden;
-	height: 415px;
-    border-radius: 25px;
-    margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+  height: 415px;
+  border-radius: 25px;
+  margin-top: 20px;
 }
 
 .slider-item {
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 0;
-	width: 100%;
-	height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .slider-item-show {
-	opacity: 1; 
-    object-fit: cover; 
+  opacity: 1;
+  object-fit: cover;
 }
 
 .arrow-position-to-switch {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 150px;
-    padding-bottom: 186px;
-	position: absolute;
-	width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 150px;
+  padding-bottom: 186px;
+  position: absolute;
+  width: 100%;
 }
 
-.arrow-next, .arrow-previous {
-    cursor: pointer;
-    width: 47px;
-    height: 79px;
+.arrow-next,
+.arrow-previous {
+  cursor: pointer;
+  width: 47px;
+  height: 79px;
 }
 
 .arrow-previous {
-    padding-left: 23px;
+  padding-left: 23px;
 }
 
 .arrow-next {
-    padding-right: 23px;
+  padding-right: 23px;
 }
 
 .counter {
-    position: absolute;
-    color: #FFFFFF;
-    padding-top: 230px;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 25px;
+  position: absolute;
+  color: #ffffff;
+  padding-top: 230px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
 }
 
 /* Responsive mobile */
 @media screen and (max-width: 767px) {
-    .slider {
-       height: 255px;
-       margin-top: 27px;
-       border-radius: 10px;
-    }
-    .arrow-position-to-switch {
-        padding-top: 118px;
-        padding-bottom: 117px;
-    }
-    .arrow-next, .arrow-previous {
-        width: 11px;
-        height: 20px;
-    }
-    .arrow-previous {
-        padding-left: 6px;
-    }
-    .arrow-next {
-        padding-right: 6px;
-    }
-    .counter {
-        display: none;
-    }
+  .slider {
+    height: 255px;
+    margin-top: 27px;
+    border-radius: 10px;
+  }
+  .arrow-position-to-switch {
+    padding-top: 118px;
+    padding-bottom: 117px;
+  }
+  .arrow-next,
+  .arrow-previous {
+    width: 11px;
+    height: 20px;
+  }
+  .arrow-previous {
+    padding-left: 6px;
+  }
+  .arrow-next {
+    padding-right: 6px;
+  }
+  .counter {
+    display: none;
+  }
 }
