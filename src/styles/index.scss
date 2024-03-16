@@ -21,15 +21,17 @@ main {
     padding: 0 50px;
   }
 }
+
 /* Responsive tablet */
 @media screen and (max-width: 991px) {
   main {
     padding: 0 10px;
   }
 }
+
 /* Responsive mobile */
 @media screen and (max-width: 767px) {
   main {
     padding: 0 20px;
   }
-}/*# sourceMappingURL=index.css.map */
+}

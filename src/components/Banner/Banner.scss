@@ -2,14 +2,13 @@
 .banner-style {
   height: 223px;
   width: 100%;
-}
-.banner-style img {
-  width: 100%;
-  height: 100%;
-  border-radius: 25px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  filter: brightness(70%);
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    filter: brightness(70%);
+  }
 }
 
 /* CSS only Banner component in Home page */
@@ -28,9 +27,9 @@
 .banner-style-in-home-page {
   padding-top: 70px;
   padding-bottom: 43px;
-}
-.banner-style-in-home-page .banner-style {
-  position: relative;
+  .banner-style {
+    position: relative;
+  }
 }
 
 /* CSS only Banner component in About page */
@@ -54,12 +53,13 @@
   .banner-style-in-home-page {
     padding-top: 16px;
     padding-bottom: 22px;
+    .banner-style {
+      height: 111px;
+    }
   }
-  .banner-style-in-home-page .banner-style {
-    height: 111px;
-  }
+
   .banner-style-in-about-page {
     padding-top: 17px;
     padding-bottom: 19px;
   }
-}/*# sourceMappingURL=Banner.css.map */
+}

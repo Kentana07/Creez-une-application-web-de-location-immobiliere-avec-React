@@ -4,17 +4,14 @@
   background-color: #000000;
   margin-top: 170px;
 }
-
 .footer-style div {
   display: flex;
   justify-content: center;
 }
-
 .footer-style img {
   padding-top: 65px;
   padding-bottom: 30px;
 }
-
 .footer-style p {
   color: #ffffff;
   font-weight: 500;
@@ -28,4 +25,4 @@
     font-size: 12px;
     line-height: 17px;
   }
-}
+}/*# sourceMappingURL=Footer.css.map */

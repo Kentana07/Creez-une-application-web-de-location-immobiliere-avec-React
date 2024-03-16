@@ -1,8 +1,6 @@
 /* CSS general for Collapse component */
 .collapse-drop-down-list {
-  background-color: #f7f7f7;
-}
-.collapse-drop-down-list h3 {
+  background-color: #f7f7f7;h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -12,13 +10,12 @@
   padding-left: 20px;
   font-weight: 500;
   color: #ffffff;
-}
-.collapse-drop-down-list h3:hover {
+}h3:hover {
   cursor: pointer;
-}
-.collapse-drop-down-list img {
+}img {
   height: 13px;
   width: 24px;
+}
 }
 
 .content-in-collapse {
@@ -152,4 +149,4 @@
   .style-collapse-in-lodging-page .collapse-in-lodging {
     width: 100%;
   }
-}/*# sourceMappingURL=Collapse.css.map */
+}

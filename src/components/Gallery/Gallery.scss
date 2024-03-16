@@ -17,8 +17,7 @@
 
 .slider-item-show {
   opacity: 1;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .arrow-position-to-switch {
@@ -80,4 +79,4 @@
   .counter {
     display: none;
   }
-}/*# sourceMappingURL=Gallery.css.map */
+}
