@@ -1,16 +1,15 @@
-import React from "react";
-import { useState, useEffect } from "react";
-import "./Home.css";
-import Banner from "../../components/Banner/Banner";
-import image from "../../assets/imgbannerhome.png";
-import Card from "../../components/Card/Card";
+import React, { useState, useEffect } from "react"; // Import de React et des hooks useState et useEffect
+import "./Home.css"; // Import du fichier CSS pour le style
+import Banner from "../../components/Banner/Banner"; // Import du composant Banner
+import image from "../../assets/imgbannerhome.png"; // Import de l'image pour la bannière
+import Card from "../../components/Card/Card"; // Import du composant Card
 
-// Creating Home page with the function declaration that creates the Home functional component
+// Déclaration du composant Home avec une fonction
 function Home() {
-  // Using useState to initialize lodgings local state with an empty array
+  // Utilisation du useState pour initialiser l'état local "lodgings" avec un tableau vide
   const [lodgings, setLodgings] = useState([]);
 
-  // Using the useEffect hook to do a request with fetch to get the lodging data from the local JSON file (lodgings.json)
+  // Utilisation du useEffect pour effectuer une requête avec fetch afin d'obtenir les données des logements à partir du fichier JSON local (lodgings.json)
   useEffect(() => {
     fetch("http://localhost:3000/lodgings.json")
       .then(function (response) {
@@ -28,19 +27,19 @@ function Home() {
     <main>
       <section>
         <div className="banner-style-in-home-page">
-          {/* Use of the Banner component */}
+          {/* Utilisation du composant Banner */}
           <Banner title={"Chez vous, partout et ailleurs"} image={image} />
         </div>
       </section>
       <section>
         <div className="lodging-list">
-          {/* Use of the Card component */}
-          {/* The . map() method is used to iterate on each element of the lodgings array. For each lodging, the Card component is rendered */}
+          {/* Utilisation du composant Card */}
+          {/* La méthode .map() est utilisée pour itérer sur chaque élément du tableau "lodgings". Pour chaque logement, le composant Card est rendu */}
           {lodgings &&
             lodgings.length > 0 &&
             lodgings.map((lodging) => (
               <Card
-                key={lodging.id}
+                key={lodging.id} // Utilisation de la clé unique "id" pour chaque logement
                 id={lodging.id}
                 title={lodging.title}
                 cover={lodging.cover}

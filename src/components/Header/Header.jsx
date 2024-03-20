@@ -1,28 +1,30 @@
 import React from "react";
-import "./Header.css";
-import logo from "../../assets/logokasa.png";
-import { Link, useLocation } from "react-router-dom";
+import "./Header.css"; // Import du fichier CSS pour le style
+import logo from "../../assets/logokasa.png"; // Import de l'image du logo
+import { Link, useLocation } from "react-router-dom"; // Import du composant Link et du hook useLocation de React Router
 
-// Header component declaration with a function
+// Déclaration du composant Header avec une fonction
 function Header() {
-  // Uses the useLocation hook provided by React Router to get the `location` object that contains information about the current URL
+  // Utilisation du hook useLocation pour obtenir l'objet `location` contenant des informations sur l'URL actuelle
   const location = useLocation();
   return (
     <header>
-      <div className="header-style">
+      <div className="header-style"> {/* Conteneur principal pour l'en-tête */}
         <h1>
+          {/* Lien vers la page d'accueil avec le logo de Kasa */}
           <Link to="/">
             <img src={logo} alt="Logo Kasa" title="Logo Kasa" />
           </Link>
         </h1>
         <nav>
-          <ul>
+          <ul> {/* Liste des liens de navigation */}
             <li>
+              {/* Lien vers la page d'accueil avec classe active si l'URL correspond à "/" */}
               <Link
                 to="/"
                 className={
                   location.pathname === "/"
-                    ? "active space-nav-link-home"
+                    ? "active space-nav-link-home" // Classe active pour le style CSS
                     : " space-nav-link-home"
                 }
               >
@@ -30,6 +32,7 @@ function Header() {
               </Link>
             </li>
             <li>
+              {/* Lien vers la page À Propos avec classe active si l'URL correspond à "/about" */}
               <Link
                 to="/about"
                 className={location.pathname === "/about" ? "active" : ""}

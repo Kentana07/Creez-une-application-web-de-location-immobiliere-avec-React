@@ -1,22 +1,21 @@
-import React from "react";
-import "./Gallery.css";
-import { useState } from "react";
-import arrowprevious from "../../assets/arrowprevious.png";
-import arrownext from "../../assets/arrownext.png";
+import React, { useState } from "react";
+import "./Gallery.css"; // Import du fichier CSS pour le style
+import arrowprevious from "../../assets/arrowprevious.png"; // Import de l'image de la flèche précédente
+import arrownext from "../../assets/arrownext.png"; // Import de l'image de la flèche suivante
 
-// Gallery component declaration with a function
+// Déclaration du composant Gallery avec une fonction
 function Gallery(props) {
-  // Definition of the local state of `slideIndex` to 0 using the useState hook
+  // Définition de l'état local `slideIndex` initialisé à 0 à l'aide du hook useState
   const [slideIndex, setSlideIndex] = useState(0);
 
-  // Declaration of a function that will be used to move to the previous image in the Gallery component
+  // Fonction pour passer à l'image précédente dans le composant Gallery
   const prevSlide = () => {
     setSlideIndex(
       slideIndex === 0 ? props.pictures.length - 1 : slideIndex - 1
     );
   };
 
-  // Declaration of a function that will be used to move to the next image in the Gallery component
+  // Fonction pour passer à l'image suivante dans le composant Gallery
   const nextSlide = () => {
     setSlideIndex(
       slideIndex === props.pictures.length - 1 ? 0 : slideIndex + 1
@@ -24,8 +23,8 @@ function Gallery(props) {
   };
 
   return (
-    <div className="slider">
-      {/* Using the map method on the props.pictures array to iterate on each picture element */}
+    <div className="slider"> {/* Conteneur principal pour la galerie */}
+      {/* Utilisation de la méthode map sur le tableau props.pictures pour itérer sur chaque élément image */}
       {props.pictures &&
         props.pictures.length > 0 &&
         props.pictures.map((picture, index) => (
@@ -40,10 +39,11 @@ function Gallery(props) {
               alt={props.title}
               title={props.title}
             />
-            {/* Check that props.pictures is well above 1 */}
+            {/* Vérification que props.pictures contient plus d'une image */}
             {props.pictures.length > 1 && (
               <div>
                 <div className="arrow-position-to-switch">
+                  {/* Flèche précédente pour passer à l'image précédente */}
                   <img
                     className="arrow-previous"
                     src={arrowprevious}
@@ -51,10 +51,12 @@ function Gallery(props) {
                     onClick={prevSlide}
                   />
                   <div>
+                    {/* Affichage du numéro de l'image actuelle sur le nombre total d'images */}
                     <p className="counter">
                       {slideIndex + 1} / {props.pictures.length}
                     </p>
                   </div>
+                  {/* Flèche suivante pour passer à l'image suivante */}
                   <img
                     className="arrow-next"
                     src={arrownext}

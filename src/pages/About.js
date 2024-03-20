@@ -1,15 +1,14 @@
-import React from "react";
-import { useState, useEffect } from "react";
-import image from "../assets/imgbannerabout.png";
-import Banner from "../components/Banner/Banner";
-import Collapse from "../components/Collapse/Collapse";
+import React, { useState, useEffect } from "react"; // Import de React et des hooks useState et useEffect
+import image from "../assets/imgbannerabout.png"; // Import de l'image pour la bannière
+import Banner from "../components/Banner/Banner"; // Import du composant Banner
+import Collapse from "../components/Collapse/Collapse"; // Import du composant Collapse
 
-// Creating About page with the function declaration that creates the About functional component
+// Déclaration du composant About avec une fonction
 function About() {
-  // Using useState to initialize the local state of aboutData with an empty array
+  // Utilisation du useState pour initialiser l'état local "aboutData" avec un tableau vide
   const [aboutData, setAboutData] = useState([]);
 
-  // Using the useEffect hook to do a request with fetch to get the aboutData data from the local JSON file (about.json)
+  // Utilisation du useEffect pour effectuer une requête avec fetch afin d'obtenir les données de "aboutData" à partir du fichier JSON local (about.json)
   useEffect(() => {
     fetch("http://localhost:3000/about.json")
       .then(function (response) {
@@ -27,13 +26,13 @@ function About() {
     <main>
       <section>
         <div className="banner-style-in-about-page">
-          {/* Use of the Banner component */}
+          {/* Utilisation du composant Banner */}
           <Banner image={image} />
         </div>
       </section>
       <section>
-        {/* Use of the Collapse component */}
-        {/* The . map() method is used to iterate on each element of the aboutData array. For each aboutData, the Collapse component is rendered */}
+        {/* Utilisation du composant Collapse */}
+        {/* La méthode .map() est utilisée pour itérer sur chaque élément du tableau "aboutData". Pour chaque "aboutData", le composant Collapse est rendu */}
         {aboutData &&
           aboutData.length > 0 &&
           aboutData.map((data, index) => (
